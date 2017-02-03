@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aplicación Web para la Gestión de Reservas de Escenarios Deportivos</title>
+		<meta name="description" content="">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	</head>
+	<body>
+		<header>
+			<h2 id="titulo1">Aplicación Web para la Gestión de</h2>
+			<h2 id="titulo2">Reservas de Escenarios Deportivos</h2>
+		</header>
+		<nav>
+			<a href="../../index.html">Inicio</a>
+			<a href="reservas.php">Consultas y Reservas</a>
+			<a href="administrar.html">Administrar</a>
+		</nav>
+		<main>
+		<section id="sec1">
+			<img class="baner" src="image/baner_administrar.jpg">
+		</section>
+		<section class="registro">
+			<h2 id="titulo">Formulario de registro</h2>
+			<div id="cerrar"><a href="javascript:cerrarVentana();">Cerrar</a></div>
+			<form action="registro.php" method=post name="formulario">
+				<div class="row">
+					<div class="col-md-6">Nombres:</div>
+					<div class="col-md-6" style="text-align:left;"><input name="txtNombresNuevo" type="text" required></div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">Apellidos:</div>
+					<div class="col-md-6" style="text-align:left;"><input name="txtApellidosNuevo" type="text" required></div>
+				</div>
+				<div class="row">
+					<div class="col-md-6" >Email:</div>
+					<div class="col-md-6" style="text-align:left;"><input name="txtEmailNuevo" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="text" required></div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">Password:</div>
+					<div class="col-md-6" style="text-align:left;"><input name="txtPasswordNuevo" type="password" required></div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">Confirme password:</div>
+					<div class="col-md-6" style="text-align:left;"><input name="txtConfirmePasswordNuevo" type="password" required></div>
+				</div>
+				<button type="submit" class="boton">Guardar información</button>
+			</form>
+			
+		</section>
+		</main>
+		
+		<footer>Derechos reservados UTPL, by <a href="">@willy</a></footer>
+		
+	</body>
+</html>

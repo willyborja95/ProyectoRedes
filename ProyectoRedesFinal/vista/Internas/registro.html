@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aplicación Web para la Gestión de Reservas de Escenarios Deportivos</title>
+		<meta name="description" content="">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+
+	</head>
+	<body>
+		<header>
+			<h2 id="titulo1">Aplicación Web para la Gestión de</h2>
+			<h2 id="titulo2">Reservas de Escenarios Deportivos</h2>
+		</header>
+		<nav>
+			<a href="../../index.html">Inicio</a>
+			<a href="reservas.php">Consultas y Reservas</a>
+			<a href="administrar.html">Administrar</a>
+		</nav>
+		<main>
+			<section class="contenedor2">
+				<section class="contenedor1">
+					<img class="baner" src="../image/baner_administrar.jpg">
+				</section>
+				<section class="contenedor1">
+					<h2 id="titulo">Formulario de registro</h2>
+					<form action="http://localhost/willianborja/ProyectoRedes/web/persistencia/agregarPropietario.php" method=post name="formulario">
+						<div class="row">
+							<div class="col-md-6"> <h4 class="etiqueta_form">Nombres:</h4></div>
+							<div class="col-md-6 txt_form"><h4><input name="txtNombres" type="text" required></h4></div>
+						</div>
+						<div class="row">
+							<div class="col-md-6"> <h4 class="etiqueta_form">Apellidos:</h4></div>
+							<div class="col-md-6 txt_form"><h4><input name="txtApellidos" type="text" required></h4></div>
+						</div>
+						<div class="row">
+							<div class="col-md-6" > <h4 class="etiqueta_form">Email:</h4></div>
+							<div class="col-md-6 txt_form"><h4><input name="txtEmail" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="text" required></h4></div>
+						</div>
+						<div class="row">
+							<div class="col-md-6"><h4 class="etiqueta_form">Password:</h4></div>
+							<div class="col-md-2 txt_form"><h4><input name="txtPassword" type="password" required></h4></div>
+						</div>
+						<div class="row">
+							<div class="col-md-6"><h4 class="etiqueta_form">Confirme password:</h4></div>
+							<div class="col-md-6 txt_form"><h4><input name="txtConfirmacionPassword" type="password" required></h4></div>
+						</div>				
+						<button type="submit" class="boton">Guardar información</button>
+					</form>
+				</section>
+			</section>
+		</main>
+		
+		<footer>Derechos reservados UTPL, by <a href="">@willy</a></footer>
+		
+	</body>
+</html>
